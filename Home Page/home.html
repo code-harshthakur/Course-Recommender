@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+<!--Main Code -->
+     <header>
+        <h1>Course Recommender</h1>
+    </header>
+    <!-- Navagation Bar -->
+    <nav class="clearfix" >
+        <div class="nav-left">
+            <a href="#">Home</a>
+        </div>
+       <div class="nav-right">
+            <a href="#">About Us</a>
+       </div>
+    </nav>
+    <!-- Welcome Message container -->
+    <div class="container">
+        <h2>Welcome to Course Recommender</h2>
+        <p>Discover the courses for your academic journey.</p>
+    </div>
+    <!-- Choices Buttons -->
+    <div class="choices">
+        <button type="button" class="domain-button">Software</button>
+        <button type="button" class="domain-button">Hardware</button>
+    </div>
+    <!-- Feedback button -->
+    <button type="button" id="feedback-button">Feedback</button>
+      <!-- Feedback-Container -->
+      <div id="feedback-form-container">
+        <div id="feedback-form">
+            <h2>Feedback Form</h2>
+            <form>
+                <label for="feedback-text">Your Feedback</label>
+                <textarea name="feedback-text" id="feedback-text" cols="50" rows="5"></textarea>
+                <br>
+                <button type="submit" id="submit-feedback">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!--Script File Linking--> 
+    <script src="./home.js"></script>
+</body>
+</html>

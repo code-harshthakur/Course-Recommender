@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #291097;
+    color: white;
+    text-align: center;
+    padding: lem 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #555;
+    color: white;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left , .nav-right {
+    float: left;
+    padding: 15px;
+}
+
+.nav-right {
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    display:block;
+}
+
+/* Container Styling */
+.container {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Choices Buttons Styling */
+.choices {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.choices button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Feedback Button Styling */
+#feedback-button {
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Aligned to bottom */
+    left: 0; /* Aligned to left */
+    padding: 10px; /* Padding around the button */
+    background-color: #007BFF; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#feedback-button:hover {
+    background-color: #0056B3;
+}
+
+/* Feedback Form Styling */
+#feedback-form-container {
+    width: 80%;
+    margin: 20px auto;
+    position: fixed;
+}
+
+#submit-feedback { /* Submit button in feedback form*/
+    background-color: #007bff;
+    color: white;
+    padding: 5px 12px 5px 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#submit-feedback:hover {
+    background-color: #0056b3; 
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: solid 1px;
+    border-radius: 8px;
+}
