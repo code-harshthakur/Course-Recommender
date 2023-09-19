@@ -76,11 +76,27 @@ nav a {
 button:hover {
     background-color: #0056b3;
 }
+/* Feedback Button Styling */
+#feedback-button {
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Aligned to bottom */
+    left: 0; /* Aligned to left */
+    padding: 10px; /* Padding around the button */
+    background-color: #007BFF; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#feedback-button:hover {
+    background-color: #0056B3;
+}
 
 /* Feedback Form Styling */
 #feedback-form-container {
     width: 80%;
     margin: 20px auto;
+    position: fixed;
 }
 
 #submit-feedback { /* Submit button in feedback form*/
