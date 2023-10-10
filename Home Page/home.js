@@ -33,21 +33,23 @@ function initializeFeedbackForm() {
         toggleFeedbackForm(feedbackFormContainer,feedbackButton);
     });
 }
-function handleDomainChoice(choice){
-    // store the choice so that we can use it in next page
-    localStorage.setItem("domain",choice);
-    window.location.href = "./Domain Page/domain.html";
-}
+// Select all buttons with the class 'domain-button'
+const domainButtons = document.querySelectorAll('.domain-button');
 
-function initializeDomainButtons() {
-    const buttons = document.querySelectorAll(".domain-button");
+// Add click event listeners to each button
+domainButtons.forEach((button) => {
+    button.addEventListener('click', function(event) {
+        // Get the text content of the clicked button
+        const buttonText = event.target.textContent;
 
-    buttons.forEach((button) => {
-         button.addEventListener("click", (e) => {
-             handleDomainChoice(e.target.textContent.toLowerCase());
-         });
+        // Redirect based on the button text
+        if (buttonText === 'Software') {
+            window.location.href = '../Domain Page/Domain1/domain1.html';
+        } else if (buttonText === 'Hardware') {
+            window.location.href = '../Domain Page/Domain2/domain2.html';
+        }
     });
-}
+});
 
 document.addEventListener("DOMContentLoaded", () => {
       // Initialize feedback button and form
