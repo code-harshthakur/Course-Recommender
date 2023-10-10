@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #332f85, #4e5fc2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+}
+
+body h1 {
+
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 999;
+}
+
+/* nav Styling */
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    justify-items:center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 10px;  /* Add this line */
+}
+
+.choice-button {
+    width: 650px;
+    height: 480px;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #86dbee, #619ca1, #55cde8);
+    background-size: 400% 400%;
+    color: white;
+    border: solid black;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+button:hover {
+    background-position: right center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transform: translateY(-9px);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
