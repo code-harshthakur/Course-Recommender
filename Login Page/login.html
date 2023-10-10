@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Login Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Course Recommender</title>
+    <link rel="stylesheet" href="./login.css"> 
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Course Recommender</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="login-form-container" id="login-form">
+            <h1 id="login-h1">Login</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit" id="login-button" onclick="handleLogin(event)">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact Us: abc@xyz.com</p>
+        <p>&copy; 2023 Course Recommender</p>
+    </footer>
+
+    <!-- Script Linking -->
+    <script src="./login.js"></script>
+
+</body>
+</html>
